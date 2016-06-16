@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gbo-zX-yjD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--THRILLER-->
+        <scene sceneID="Wzc-CE-Bub">
+            <objects>
+                <tableViewController id="mCJ-Uu-Ybn" customClass="TableViewController" customModule="CustomCellFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="xcM-MI-phn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="100" id="oCI-Pe-dMk" customClass="SongCell" customModule="CustomCellFun" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oCI-Pe-dMk" id="4Te-K0-w21">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thriller" translatesAutoresizingMaskIntoConstraints="NO" id="yDx-7j-PcY">
+                                            <rect key="frame" x="8" y="3" width="100" height="88.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="Qgr-XS-Zdh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qsf-8Q-DyH">
+                                            <rect key="frame" x="117" y="8" width="195" height="33"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Name Of Song">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="24" name="AvenirNext-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KKm-mR-0KG">
+                                            <rect key="frame" x="117" y="58" width="195" height="33"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Length">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="18" name="Avenir-Light"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KKm-mR-0KG" firstAttribute="leading" secondItem="yDx-7j-PcY" secondAttribute="trailing" id="9Wk-cb-I9C"/>
+                                        <constraint firstItem="KKm-mR-0KG" firstAttribute="bottom" secondItem="yDx-7j-PcY" secondAttribute="bottom" id="IO7-7R-TCY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yDx-7j-PcY" secondAttribute="bottom" id="USB-Qx-nsD"/>
+                                        <constraint firstItem="yDx-7j-PcY" firstAttribute="top" secondItem="4Te-K0-w21" secondAttribute="topMargin" constant="-5" id="ghN-lw-2B6"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="yDx-7j-PcY" secondAttribute="leading" id="o92-cz-q43"/>
+                                        <constraint firstItem="Qsf-8Q-DyH" firstAttribute="top" secondItem="yDx-7j-PcY" secondAttribute="top" id="pIZ-6e-Q4I"/>
+                                        <constraint firstItem="Qsf-8Q-DyH" firstAttribute="leading" secondItem="yDx-7j-PcY" secondAttribute="trailing" id="sBi-Ld-Jqq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumImageView" destination="yDx-7j-PcY" id="46H-A0-92s"/>
+                                    <outlet property="lengthOfSongLabel" destination="KKm-mR-0KG" id="Dsk-en-m2U"/>
+                                    <outlet property="nameOfSongLabel" destination="Qsf-8Q-DyH" id="eJD-5H-uxS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mCJ-Uu-Ybn" id="JJO-gL-XUf"/>
+                            <outlet property="delegate" destination="mCJ-Uu-Ybn" id="yaH-ps-l7J"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="THRILLER" id="dJV-tz-bXj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="131-Kd-UUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101.5" y="222.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K8G-pu-RuT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gbo-zX-yjD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yXK-Na-QEI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mCJ-Uu-Ybn" kind="relationship" relationship="rootViewController" id="mys-kL-K0P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MD8-bb-sbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508.5" y="222.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Thriller" width="300" height="300"/>
+    </resources>
+</document>
