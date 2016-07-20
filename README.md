@@ -2,7 +2,7 @@
 
 ![Earhart](http://i.imgur.com/YR989I2.jpg?1)
 
-> The most effective way to do it, is to do it. ~[Amelia Earhart](https://en.wikipedia.org/wiki/Amelia_Earhart)
+> The most effective way to do it, is to do it. -[Amelia Earhart](https://en.wikipedia.org/wiki/Amelia_Earhart)
  
 ## Learning Objectives
 
