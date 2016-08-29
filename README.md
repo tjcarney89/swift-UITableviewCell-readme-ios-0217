@@ -3,11 +3,18 @@
 ![Earhart](http://i.imgur.com/YR989I2.jpg?1)
 
 > The most effective way to do it, is to do it. -[Amelia Earhart](https://en.wikipedia.org/wiki/Amelia_Earhart)
+
+## Overview 
+
+In this lesson, we'll create and use a custom `UITableViewCell`
  
 ## Learning Objectives
 
 * Create a custom `UITableViewCell`.
-* Use this `UITableViewCell` by populating it with necessary info.
+* Use  `UITableViewCell` by populating it with necessary information
+* Explain that a prototype cell is used to set the design for the cells used by a particular table view
+* List the three main elements of a table view cell
+* Design and configure custom cells
 
 ## Table View Cells
 
