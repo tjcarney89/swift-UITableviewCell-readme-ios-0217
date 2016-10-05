@@ -67,21 +67,28 @@ Open up `TableViewController.swift` in Xcode's editor. This, as you know, is the
 Most of the code of `TableViewController` should be familiar to you by now. The only slightly new bit is in the `tableView(_:cellForRowAtIndexPath:)` method. Take a look:
 
 ```swift
-override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! SongCell
-    cell.backgroundColor = UIColor.grayColor()
-    let song = thrillerAlbum[indexPath.row]
-    cell.nameOfSongLabel.text? = song.name
-    cell.lengthOfSongLabel.text? = song.length
-    return cell
-}
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SongCell
+        
+        cell.backgroundColor = UIColor.gray
+        
+        let song = thrillerAlbum[indexPath.row]
+        
+        cell.nameOfSongLabel.text? = song.name
+        cell.lengthOfSongLabel.text? = song.length
+        
+        return cell
+    }
 ```
 
 As usual, this code dequeues a reusable cell using a reuse identifier. Keep in mind that the reuse identifier is attached to a cell of type `SongCell`, not just a generic `UITableViewCell` instance, so when a reusable cell is retrieved, it is _cast_ to a `SongCell`. And that's where things get a bit more intersting than what you've seen before. Pay special attention to these lines:
 
 ```swift
-cell.backgroundColor = UIColor.grayColor()
+cell.backgroundColor = UIColor.gray
+
 let song = thrillerAlbum[indexPath.row]
+        
 cell.nameOfSongLabel.text? = song.name
 cell.lengthOfSongLabel.text? = song.length
 ```
